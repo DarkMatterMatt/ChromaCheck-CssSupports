@@ -2,3 +2,4 @@
 chromacheck*.ttf
 chromacheck*.base64
 deploy.sh
+.vscode
