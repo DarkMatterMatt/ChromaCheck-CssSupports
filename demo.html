@@ -39,6 +39,21 @@
                 display: none;
             }
 
+            .chromacheck-tech_sbix .tech-supports-sbix,
+            .chromacheck-tech_colr .tech-supports-colr,
+            .chromacheck-tech_cbdt .tech-supports-cbdt,
+            .chromacheck-tech_svg .tech-supports-svg,
+            .chromacheck-tech_colrv1 .tech-supports-colrv1 {
+                background: limegreen;
+            }
+            .chromacheck-tech_sbix .tech-supports-sbix strong,
+            .chromacheck-tech_colr .tech-supports-colr strong,
+            .chromacheck-tech_cbdt .tech-supports-cbdt strong,
+            .chromacheck-tech_svg .tech-supports-svg strong,
+            .chromacheck-tech_colrv1 .tech-supports-colrv1 strong {
+                display: none;
+            }
+
             @supports font-tech(color-sbix) {
                 .css-supports-sbix {
                     background: limegreen;
@@ -99,7 +114,7 @@
         <div class="cbdt">CBDT/CBLC is <strong>not</strong> supported</div>
         <br>
 
-        <p>CSS @supports</p>
+        <p>CSS @supports font-tech(), <a href="https://caniuse.com/mdn-css_at-rules_supports_font-tech">Can I use</a></p>
         <div class="css-supports-sbix">SBIX is <strong>not</strong> supported</div>
         <div class="css-supports-colr">COLR is <strong>not</strong> supported</div>
         <div class="css-supports-colrv1">COLRv1 is <strong>not</strong> supported</div>
@@ -107,12 +122,22 @@
         <div class="css-supports-cbdt">CBDT/CBLC is <strong>not</strong> supported</div>
         <br>
 
+        <p>CSS @font-face tech(), <a href="https://caniuse.com/mdn-css_at-rules_font-face_src_tech_keyword">Can I use</a></p>
+        <div class="tech-supports-sbix">SBIX is <strong>not</strong> supported</div>
+        <div class="tech-supports-colr">COLR is <strong>not</strong> supported</div>
+        <div class="tech-supports-colrv1">COLRv1 is <strong>not</strong> supported</div>
+        <div class="tech-supports-svg">OpenType-SVG is <strong>not</strong> supported</div>
+        <div class="tech-supports-cbdt">CBDT/CBLC is <strong>not</strong> supported</div>
+        <br>
+
+        <canvas id="canvas" width="20" height="200"></canvas>
+
         <p>
             ChromaCheck checks which <a href="https://pixelambacht.nl/2014/multicolor-fonts/">OpenType
             color formats</a> are supported in this browser.
             <a href="https://github.com/DarkMatterMatt/ChromaCheck-CssSupports">Get the code on Github!</a>
         </p>
 
-        <script src="chromacheck-min.js"></script>
+        <script src="chromacheck.js"></script>
     </body>
 </html>
