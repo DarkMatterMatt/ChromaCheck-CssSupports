@@ -38,6 +38,48 @@
             .chromacheck-colrv1 .colrv1 strong {
                 display: none;
             }
+
+            @supports font-tech(color-sbix) {
+                .css-supports-sbix {
+                    background: limegreen;
+                }
+                .css-supports-sbix strong {
+                    display: none;
+                }
+            }
+            @supports font-tech(color-colrv0) {
+                .css-supports-colr {
+                    background: limegreen;
+                }
+                .css-supports-colr strong {
+                    display: none;
+                }
+            }
+            @supports font-tech(color-colrv1) {
+                .css-supports-colrv1 {
+                    background: limegreen;
+                }
+                .css-supports-colrv1 strong {
+                    display: none;
+                }
+            }
+            @supports font-tech(color-svg) {
+                .css-supports-svg {
+                    background: limegreen;
+                }
+                .css-supports-svg strong {
+                    display: none;
+                }
+            }
+            @supports font-tech(color-cbdt) {
+                .css-supports-cbdt {
+                    background: limegreen;
+                }
+                .css-supports-cbdt strong {
+                    display: none;
+                }
+            }
+
         </style>
     </head>
 
@@ -49,11 +91,21 @@
             ChromaCheck
         </h1>
 
+        <p>Real support</p>
         <div class="sbix">SBIX is <strong>not</strong> supported</div>
         <div class="colr">COLR is <strong>not</strong> supported</div>
         <div class="colrv1">COLRv1 is <strong>not</strong> supported</div>
         <div class="svg">OpenType-SVG is <strong>not</strong> supported</div>
         <div class="cbdt">CBDT/CBLC is <strong>not</strong> supported</div>
+        <br>
+
+        <p>CSS @supports</p>
+        <div class="css-supports-sbix">SBIX is <strong>not</strong> supported</div>
+        <div class="css-supports-colr">COLR is <strong>not</strong> supported</div>
+        <div class="css-supports-colrv1">COLRv1 is <strong>not</strong> supported</div>
+        <div class="css-supports-svg">OpenType-SVG is <strong>not</strong> supported</div>
+        <div class="css-supports-cbdt">CBDT/CBLC is <strong>not</strong> supported</div>
+        <br>
 
         <p>
             ChromaCheck checks which <a href="https://pixelambacht.nl/2014/multicolor-fonts/">OpenType
